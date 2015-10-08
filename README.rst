@@ -1,5 +1,8 @@
 .. include globals.rst
 
+.. image:: https://travis-ci.org/JonnyFunFun/pytest-envfiles.svg?branch=master
+    :target: https://travis-ci.org/JonnyFunFun/pytest-envfiles
+
 pytest-envfiles
 ===============
 

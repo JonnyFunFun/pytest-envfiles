@@ -1,9 +1,10 @@
-import os
 import sys
 
-from setuptools import setup, find_packages
+import os
+from setuptools import setup
 from setuptools.command.test import test
 from pytest_envfiles import __version__
+
 
 # Utility function to read the README file.
 # Used for the long_description.  It's nice, because now 1) we have a top level
@@ -37,7 +38,7 @@ setup(
     entry_points={'pytest11': ['env = pytest_envfiles.plugin']},
     install_requires=['pytest>=2.6.0'],
     tests_require=['pytest'],
-    cmdclass = {'test': PyTest},
+    cmdclass={'test': PyTest},
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
